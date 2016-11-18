@@ -1,0 +1,171 @@
+/* NAVBAR CSS */
+
+@-webkit-keyframes fade_descend {
+  from {
+    opacity: 0;
+    margin: -10px 0 0 0;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+  }
+}
+@keyframes fade_descend {
+  from {
+    opacity: 0;
+    margin: -10px 0 0 0;
+  }
+  to {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+body
+{
+	overflow-x: hidden;
+	-webkit-animation-name: fade_descend;
+	-webkit-animation-duration: 1s;
+	animation-name: fade_descend;
+	animation-duration: 1s;
+}
+.navbar
+{
+	z-index : 200;
+	background-color : #000;
+	opacity : 0.5;
+	position : absolute;
+	width : 100%;
+	top : 0;
+	left : 0;
+	border : none;
+}
+.icon-bar
+{
+	background-color : #FFF;
+}
+.navbar-toggle
+{
+	border : 1px solid #FFF;
+}
+@media screen and (min-width : 768px)
+{
+	.navbar-nav
+	{
+		float : right;
+	}
+	.menu-item
+	{
+		display : inline-block;
+	}
+	#menu-menu_general
+	{
+		float : right !important;
+	}
+	.img_avis
+	{
+		margin-top : 10vh !important;
+	}
+}
+@media screen and (max-width : 767px)
+{
+	.menu-item
+	{
+		width : 80vw;
+	}
+}
+.navbar-nav li:hover
+{
+	padding : 0 40px 0 40px;
+	background-color: #E7E7E7;
+	transition : all 1s;
+}
+.menu-item:hover
+{
+	padding : 15px 40px 15px 40px;
+	background-color: #E7E7E7;
+	transition : all 1s;
+}
+#menu-menu_sg
+{
+	margin : 0;
+	float : left;
+	padding : 0;
+}
+.menu-item
+{
+	list-style: none;
+	padding : 15px;
+}
+.menu-item a
+{
+	color : #555;
+	padding : 16px;
+}
+.menu-item a
+{
+	text-decoration: none;
+}
+
+/* FIN NAVBAR */
+
+/* QUESTIONNAIRE CSS */
+
+.question
+{
+	margin : 10% 0 0 0 !important;
+}
+
+.question_img, .answer_img
+{
+	width : 30%;
+	height : 30%;
+	margin : 4% 0 0 0;
+}
+@media screen and (max-width : 991px)
+{
+	.texte_container
+	{
+		width : 40%;
+		display : inline-block;
+	}
+	.answer_img_container
+	{
+		width : 50%;
+		display : inline-block;
+	}
+	.question_img, .answer_img
+	{
+		width : 60%;
+		height : 60%;
+		margin : 0 0 10% 0;
+	}
+}
+
+.answers, .error
+{
+	padding : 1% 0 1% 0;
+	margin : 1% 0 0 0;
+}
+
+.button_answer
+{
+	color : #000;
+	padding : 5px;
+	border : 1px solid #000;
+}
+
+.button_answer:hover
+{
+	color : #000;
+	text-decoration : none;
+}
+
+.next
+{
+	margin : 10px 0 0 0;
+}
+
+
+
+/* QUESTIONNAIRE CSS */
