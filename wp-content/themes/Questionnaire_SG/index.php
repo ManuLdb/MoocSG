@@ -6,6 +6,7 @@
 <form action="" method="">
  
  <div class="col-md-12 score_container">Votre score est de <strong id="score"></strong></div>
+ <div class="col-md-12"><a href="#" class="btn btn-default" data-target="#regles" data-toggle="modal">Règles</a></div>
 	<div class="container" id="question1">
 	    <div class="question col-md-12">
 	      <div class="texte_container col-md-5">
@@ -20,6 +21,7 @@
 	          <p><input type="radio" id="r1" name="q1">Réponse 1 (vraie)</p>
 	          <p><input type="radio" id="r2" name="q1">Réponse 2 (fausse)</p>
 	          <p><input type="radio" id="r3" name="q1">Réponse 3 (fausse)</p>
+	          <p><input type="radio" id="r4" name="q1">Réponse 4 (fausse)</p>
 	          <p><input type="radio" id="i1" name="q1">Intrus (vraie)</p>
 	          <p><input type="radio" id="i2" name="q1">Texte (fausse)</p>
 	          <p><input type="radio" id="i3" name="q1">Texte (fausse)</p>
@@ -65,9 +67,10 @@
 		          <div id="ReponseCash_02" class="cash"><input type="text" id="reponse_cash_02" /></div>
 		          <a href="#" class="button_answer" id="ac2">Confirmer</a>
 	          </div>
-	          <p><input type="radio" id="r4" name="q2">Réponse 1 (fausse)</p>
-	          <p><input type="radio" id="r5" name="q2">Réponse 2 (vraie)</p>
-	          <p><input type="radio" id="r6" name="q2">Réponse 3 (fausse)</p>
+	          <p><input type="radio" id="r5" name="q2">Réponse 1 (fausse)</p>
+	          <p><input type="radio" id="r6" name="q2">Réponse 2 (vraie)</p>
+	          <p><input type="radio" id="r7" name="q2">Réponse 3 (fausse)</p>
+	          <p><input type="radio" id="r8" name="q1">Réponse 4 (fausse)</p>
 	          <p><input type="radio" id="i4" name="q2">Texte (fausse)</p>
 	          <p><input type="radio" id="i5" name="q2">Intrus (vraie)</p>
 	          <p><input type="radio" id="i6" name="q2">Texte (fausse)</p>
@@ -113,9 +116,10 @@
 		          <div id="ReponseCash_03" class="cash"><input type="text" id="reponse_cash_03" /></div>
 		          <a href="#" class="button_answer" id="ac3">Confirmer</a>
 	          </div>
-	          <p><input type="radio" id="r7" name="q3">Réponse 1 (fausse)</p>
-	          <p><input type="radio" id="r8" name="q3">Réponse 2 (fausse)</p>
-	          <p><input type="radio" id="r9" name="q3">Réponse 3 (vraie)</p>
+	          <p><input type="radio" id="r9" name="q3">Réponse 1 (fausse)</p>
+	          <p><input type="radio" id="r10" name="q3">Réponse 2 (fausse)</p>
+	          <p><input type="radio" id="r11" name="q3">Réponse 3 (vraie)</p>
+	          <p><input type="radio" id="r12" name="q1">Réponse 4 (fausse)</p>
 	          <p><input type="radio" id="i7" name="q3">Texte (fausse)</p>
 	          <p><input type="radio" id="i8" name="q3">Texte (fausse)</p>
 	          <p><input type="radio" id="i9" name="q3">Intrus (vraie)</p>
