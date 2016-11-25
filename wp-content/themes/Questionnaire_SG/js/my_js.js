@@ -110,6 +110,7 @@ $("#flash_01").click(function(){
   $("#choix_joker_01").hide();
   $("#question1 .question .texte_container p:gt(4)").show(200);
   $("#question1 .question .texte_container p:lt(4)").hide();
+  $("#question1 .question .texte_container p:first").show(200);
   $("#ai1").show(200);
   $("#indice_01").show(200);
 });
@@ -117,6 +118,7 @@ $("#flash_02").click(function(){
   $("#choix_joker_02").hide();
   $("#question2 .question .texte_container p:gt(4)").show(200);
   $("#question2 .question .texte_container p:lt(4)").hide();
+  $("#question2 .question .texte_container p:first").show(200);
   $("#ai2").show(200);
   if(error_on_flash == 0)
   {
@@ -131,6 +133,7 @@ $("#flash_03").click(function(){
   $("#choix_joker_03").hide();
   $("#question3 .question .texte_container p:gt(4)").show(200);
   $("#question3 .question .texte_container p:lt(4)").hide();
+  $("#question3 .question .texte_container p:first").show(200);
   $("#ai3").show(200);
   if(error_on_flash == 0)
   {
