@@ -1,0 +1,706 @@
+/*
+Theme Name: MOOC Société Générale
+Author: Camil Mesfioui
+Description: Mooc finance pilotage financier
+Tags: MOOC , Finance , pilotage financier , finance , Société Générale
+Text Domain: MOOC SOCIETE GENERALE
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+p {
+  iframe {
+    height:auto;
+    width: 100%;
+  }
+}
+
+.col-xs-7,.col-xs-5 {
+  img {
+    width: 100%;
+  }
+}
+
+body {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  overflow-x: hidden;
+}
+.brand {
+  height: 80px;
+  margin-bottom: 10px;
+}
+.brand img {
+  height: 40px;
+  margin-top: 5px;
+}
+.brand .slogan {
+  margin-top: 15px;
+}
+.brand i {
+  padding-top: 10px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  color: red;
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.pad-right10 {
+  padding-right: 10px;
+}
+
+/* MENU */
+
+#menu-top-menu {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+nav #menu-menu-principale {
+  padding: 10px;
+}
+nav ul li {
+  padding-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+nav ul li a {
+  color: #000000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: red;
+}
+nav .navbar-toggle {
+  padding: 0px;
+  display: block;
+  margin: 10px auto;
+}
+nav .navbar-toggle .icon-bar {
+  background-color: red!important;
+}
+nav #bs-example-navbar-collapse-1 {
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+.index .container-fluid {
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 450px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.index .container-fluid .form-control {
+  border-color: red;
+}
+.index .container-fluid .input-group-btn:last-child > .btn,
+.index .container-fluid .input-group-btn:last-child > .btn-group {
+  border-color: red;
+}
+.index .container-fluid .fleche {
+  margin-top: 50px;
+  font-size: 4em;
+  color: #ffffff;
+}
+.index h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.index .container {
+  margin-bottom: 50px;
+}
+.index .container h2 {
+  color: red;
+  margin-left: 40px;
+}
+.index .container hr {
+  border-top: solid 8px red;
+  margin-top: 39px;
+}
+.index .container h3 {
+  font-size: 1.4em;
+}
+.index .container h4 {
+  font-size: 1.3em;
+  padding-top: 12px;
+}
+.index .container h5 {
+  font-size: 1.3em;
+  padding-top: 12px;
+}
+.index .container .theme {
+  margin-top: -20px;
+}
+
+
+/* Cours */
+.all-cours a,
+.T1 a,
+.T2 a,
+.T3 a,
+.T4 a,
+.T5 a,
+.T6 a {
+  color: #000;
+}
+.all-cours a:hover,
+.T1 a:hover,
+.T2 a:hover,
+.T3 a:hover,
+.T4 a:hover,
+.T5 a:hover,
+.T6 a:hover {
+  color: red;
+  transition: 1s;
+  text-decoration: none;
+}
+.all-cours h1,
+.T1 h1,
+.T2 h1,
+.T3 h1,
+.T4 h1,
+.T5 h1,
+.T6 h1 {
+  text-align: center;
+  font-size: 15px;
+  height: 20px;
+  margin-bottom: 30px;
+}
+.all-cours .col-md-4,
+.T1 .col-md-4,
+.T2 .col-md-4,
+.T3 .col-md-4,
+.T4 .col-md-4,
+.T5 .col-md-4,
+.T6 .col-md-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.all-cours .col-md-4 img,
+.T1 .col-md-4 img,
+.T2 .col-md-4 img,
+.T3 .col-md-4 img,
+.T4 .col-md-4 img,
+.T5 .col-md-4 img,
+.T6 .col-md-4 img {
+  width: 100%;
+  min-height: 240px;
+  max-height: 240px;
+  border: 1px solid red;
+}
+.all-cours .col-md-6,
+.T1 .col-md-6,
+.T2 .col-md-6,
+.T3 .col-md-6,
+.T4 .col-md-6,
+.T5 .col-md-6,
+.T6 .col-md-6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.all-cours .col-md-6 .col-md-9 img,
+.T1 .col-md-6 .col-md-9 img,
+.T2 .col-md-6 .col-md-9 img,
+.T3 .col-md-6 .col-md-9 img,
+.T4 .col-md-6 .col-md-9 img,
+.T5 .col-md-6 .col-md-9 img,
+.T6 .col-md-6 .col-md-9 img {
+  width: 100%;
+  border: 1px solid red;
+}
+.T1 img,
+.T2 img,
+.T3 img,
+.T4 img,
+.T5 img,
+.T6 img {
+  width: 100%;
+  border: 1px solid red;
+}
+.cours_single {
+  padding-bottom: 20px;
+}
+.cours_single h3 {
+  color: red;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.cours_single .left-col {
+  padding-right: 30px;
+  padding-left: 0;
+}
+.cours_single .left-col p {
+  font-size: 1.3em;
+}
+.cours_single .left-col .title {
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.quizz-item {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.cours_single .right-col {
+  background-color: #dbdcdd;
+  padding-bottom: 10px;
+}
+.cours_single .right-col .profil img {
+  width: 140px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.cours_single .right-col h4 {
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  &:hover {
+    color: red;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -ms-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+  }
+}
+.cours_single .right-col iframe {
+  width: 100%;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+.bs-wizard {
+  margin-top: 40px;
+  .col-xs-2 {
+    width:20%;
+  }
+}
+/*Form Wizard*/
+.bs-wizard {
+  border-bottom: solid 1px #e0e0e0;
+  padding: 0 0 10px 0;
+}
+.bs-wizard > .bs-wizard-step {
+  padding: 0;
+  position: relative;
+}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+  color: #595959;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {
+  color: #999;
+  font-size: 14px;
+}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: #ea4d4d;
+  top: 45px;
+  left: 50%;
+  margin-top: -7px;
+  margin-left: -8px;
+  border-radius: 50%;
+}
+.bs-wizard > .bs-wizard-step > .progress {
+  position: relative;
+  border-radius: 0px;
+  height: 8px;
+  box-shadow: none;
+  margin: 20px 0;
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+  width: 0px;
+  box-shadow: none;
+  background: #ea4d4d;
+}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+  width: 100%;
+}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
+  width: 50%;
+}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {
+  width: 0%;
+}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {
+  width: 100%;
+}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
+  background-color: #e5e5e5;
+}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
+  opacity: 0;
+}
+.bs-wizard > .bs-wizard-step:first-child > .progress {
+  left: 50%;
+  width: 50%;
+}
+.bs-wizard > .bs-wizard-step:last-child > .progress {
+  width: 50%;
+}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+  pointer-events: none;
+}
+/*END Form Wizard*/
+.profil h2 {
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.profil .background {
+  background-color: #e3e3e3;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+.profil h3 {
+  font-size: 1.3em;
+}
+.profil h4 {
+  font-size: 1.2em;
+  margin-top: 40px;
+  margin-left: -20px;
+}
+.profil h5 {
+  font-size: 1em;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+.profil img {
+  border: 1px solid red;
+}
+.profil h6 {
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+  font-size: 1.1em;
+}
+.profil form {
+  margin-top: 10px;
+}
+.apropos {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.apropos .col-md-7 {
+  padding-bottom: 20px;
+}
+.apropos span {
+  color: red !important;
+}
+.apropos .padding0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.apropos .theme h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.apropos .theme .col-xs-7 hr {
+  margin-top: 10px;
+  margin-left: -80px;
+  border-top: 1px red dashed;
+}
+.actualites {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.actualites .col-md-7 {
+  padding-bottom: 20px;
+}
+.actualites span {
+  color: red !important;
+}
+.actualites .padding0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.actualites .theme h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.actualites .theme .col-xs-7 hr {
+  margin-top: 10px;
+  margin-left: -80px;
+  border-top: 1px red dashed;
+}
+.contact {
+  margin-bottom: 50px;
+}
+.contact h1 {
+  font-size: 1.7em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 1.3em;
+}
+.contact form {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  padding-bottom: 80px;
+}
+.contact form .form-control {
+  width: 100%;
+  color: red;
+  border-bottom: 1px solid #000000;
+}
+.contact form .form-group {
+  padding-top: 15px;
+}
+.contact form input,
+.contact form textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.2em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+.contact form textarea {
+  width: 100%!important;
+}
+.contact form button {
+  border-radius: 0;
+  margin-top: 10px;
+  width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #000000;
+  border: 1px solid #000000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.contact form button:hover {
+  background-color: red;
+  border: inherit;
+  color: #ffffff;
+}
+
+// Search form
+
+#searchform {
+  width: 100%;
+  .input-group {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  height: 25px;
+}
+.footer p {
+  margin-bottom: 0;
+  padding-top: 3px;
+}
+
+#update-utilisateur {
+  input,textarea {
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+  }
+}
+
+.cours_single .right-col iframe {
+  height: 100% !important;
+}
+
+/* Iframe cours */
+
+.iframe-cours {
+  iframe {
+    width: 100% !important;
+    height: 480px;
+  }
+}
+
+.iframe-cours2 {
+  iframe {
+  width: 100% !important;
+  height: 405px;
+  }
+}
+
+/* Progress bar */
+
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+  pointer-events: all;
+}
+
+/* BTN RESET */
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-1 {
+  display: block;
+  margin: 10% auto;
+  border: 1px solid #f05b6f;
+  color: #f05b6f;
+  background: #fff;
+  &:hover {
+    background: transparent;
+  }
+}
+
+.btn-1c:after {
+  text-align: center;
+  background: #e20c35;
+  color: #fff;
+}
+
+.btn-1c:hover, .btn-1c:active {
+  color: #fff;
+}
+
+.btn {
+  padding: 15px 25px;
+  text-transform: inherit;
+}
+
+// Pre hover color e20c35 and f05b6f
+
+// Home
+
+.home-title {
+  margin: 30px auto 40px auto;
+  text-decoration: underline;
+}
+
+// Modules
+
+.modules {
+  margin: 15px auto 15px auto;
+}
+
+// End Home
+
+// Themes
+
+.themes {
+  img {
+    height: 250px;
+  }
+}
+
+// END THEME
+
+// Connect
+
+.connect-wrapper {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.reset-mdp {
+  cursor: pointer;
+  text-align: center;
+  p {
+    color: #000;
+  }
+}
+
+.no-label {
+  display: none;
+}
+
+// End connect
+
+// Scroll top and down
+
+.glyphicon-chevron-down {
+  cursor: pointer;
+}
+
+// Mediaqueries
+
+// Médiaqueries de référence
+
+/* Mobile first queries */
+/* Larger than mobile */
+@media (min-width: 300px) {
+  .cours_single {
+    .col-md-offset-1, .col-md-7 {
+      padding: 0px;
+    }
+  }
+}
+/* Larger than phablet */
+@media (min-width: 550px) {}
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .navbar-toggle {
+    display: none !important;
+  }
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .bs-wizard {
+    .col-xs-2 {
+      width:16.66666667%;
+    }
+  }
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .cours_single {
+    .col-md-offset-1, .col-md-7 {
+      padding-right: 30px;
+    }
+  }
+}

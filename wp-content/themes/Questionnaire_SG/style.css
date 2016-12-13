@@ -113,7 +113,10 @@ body
 
 .question
 {
-	margin : 10% 0 0 0 !important;
+	margin : 20 0 0 0 !important;
+	background:#d1d1d1;
+	height:300px;
+	width:100%;
 }
 
 .question_img, .answer_img
@@ -177,9 +180,8 @@ body
 }
 .choix_joker div a
 {
-	padding : 15px;
-	border : 1px solid #000;
-	color : #000;
+	border : 2px solid #515151;
+	color : #515151;
 	text-decoration : none;
 }
 .indices
@@ -193,3 +195,7 @@ body
 
 
 /* QUESTIONNAIRE CSS */
+
+.navbar-default{
+	color:red;
+}

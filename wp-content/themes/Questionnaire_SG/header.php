@@ -12,41 +12,43 @@
 	    <link rel="icon" type="image/png" href="#" />
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
+		<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
 	</head>
 <body>
 <!--<script src="<?php bloginfo('url'); ?>/wp-content/themes/our_theme/js/wow.js"></script>
               <script>
               new WOW().init();
               </script> -->
-<div class="col-md-12" id="container">
-	<nav class="navbar navbar-default">
-	  <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".Navigation_mobile_tablette" aria-expanded="false">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	   </div>
-	   <div class="collapse navbar-collapse Navigation_mobile_tablette">
-	<?php $defaults = array(
-		'theme_location' == '',
-		'menu' == 'menu_SG',
-		'container' == '',
-		'container_class' == "navbar navbar-default",
-		'container_id' == '',
-		'menu_class' == 'menu',
-		'menu_id' == '',
-		'echo' == true,
-		'fallback_cb' == 'wp_page_menu',
-		'before' == '',
-		'after' == '',
-		'link_before' == '',
-		'link_after' == '',
-		'items_wrap' == '<ul class="nav navbar-nav">%3$s</ul>',
-		'depth' == '',
-		'walker' == ''
-		);
-		wp_nav_menu($defaults);
-	?>
-	</div>
-	</nav>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="brandlogo">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Assessments</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Hello "nickname"</a></li>
+        <li><button type="button" class="btn btn-default navbar-btn">Disconnect</button></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

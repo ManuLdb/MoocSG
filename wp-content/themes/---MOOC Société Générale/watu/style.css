@@ -1,0 +1,273 @@
+.watu-question, #action-button {
+	display:none;
+}
+
+form.quiz-form {
+	text-align:left;
+}
+
+.single-page-quiz .watu-question, .single-page-quiz #action-button {
+	display:block;
+}
+.single-page-quiz #next-question {
+	display:none;
+}
+.question-content {
+	margin-top:20px;
+}
+
+.answer span {
+	padding-right:20px;
+}
+.user-answer span {
+	font-weight:bold;
+	background:url(wrong.png) no-repeat right top;
+}
+.correct-answer span {
+	background:url(correct.png) no-repeat right top;
+}
+
+.watu-sidebox
+{
+	border:1px solid black;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+#watu-sidebar
+{
+	float:left;
+	width:25%;
+}
+
+#watu-related, #watu-ad
+{
+	background-color: #BBEEDD;
+}
+
+.quiz-form label {
+	display: inline !important;
+}
+
+.watu-basic-chart td, .watu-basic-chart-points td, .watu-basic-chart-percent td {
+	padding: 6px;
+}
+
+/*.quiz-form input[type='checkbox'] {
+   display: inline !important;
+}
+
+.quiz-form input[type='radio'] {
+   display: inline !important;
+}*/
+
+.quiz-form input[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+	position: absolute;
+	left: -9999px;
+}
+/* on prépare le label */
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+	position: relative;
+	/* permet de positionner les pseudo-éléments */
+	padding-left: 25px;
+	/* fait un peu d'espace pour notre case à venir */
+	cursor: pointer;
+	/* affiche un curseur adapté */
+}
+/* Aspect des checkboxes */
+/* :before sert à créer la case à cocher */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 17px;
+	height: 17px;
+	/* dim. de la case */
+	border: 1px solid #aaa;
+	background: #f8f8f8;
+	border-radius: 3px;
+	/* angles arrondis */
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3) /* légère ombre interne */;
+}
+/* Aspect général de la coche */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	left: 4px;
+	font-size: 14px;
+	color: #e20030;
+	transition: all .2s;
+	/* on prévoit une animation */
+}
+/* Aspect si "pas cochée" */
+[type="checkbox"]:not(:checked) + label:after {
+	opacity: 0;
+	/* coche invisible */
+	transform: scale(0);
+	/* mise à l'échelle à 0 */
+}
+/* Aspect si "cochée" */
+[type="checkbox"]:checked + label:after {
+	opacity: 1;
+	/* coche opaque */
+	transform: scale(1);
+	/* mise à l'échelle 1:1 */
+}
+/* aspect désactivée */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+/* styles de la coche (si cochée/désactivée) */
+[type="checkbox"]:disabled:checked + label:after {
+	color: #999;
+}
+/* on style aussi le label quand désactivé */
+[type="checkbox"]:disabled + label {
+	color: #aaa;
+}
+/* aspect au focus de l'élément */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+	border: 1px dotted blue;
+}
+
+.quiz-form input[type="radio"]:not(:checked),
+[type="radio"]:checked {
+	position: absolute;
+	left: -9999px;
+}
+/* on prépare le label */
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+	position: relative;
+	/* permet de positionner les pseudo-éléments */
+	padding-left: 25px;
+	/* fait un peu d'espace pour notre case à venir */
+	cursor: pointer;
+	/* affiche un curseur adapté */
+}
+/* Aspect des checkboxes */
+/* :before sert à créer la case à cocher */
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 17px;
+	height: 17px;
+	/* dim. de la case */
+	border: 1px solid #aaa;
+	background: #f8f8f8;
+	border-radius: 3px;
+	/* angles arrondis */
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3) /* légère ombre interne */;
+}
+/* Aspect général de la coche */
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	left: 4px;
+	font-size: 14px;
+	color: #e20030;
+	transition: all .2s;
+	/* on prévoit une animation */
+}
+/* Aspect si "pas cochée" */
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	/* coche invisible */
+	transform: scale(0);
+	/* mise à l'échelle à 0 */
+}
+/* Aspect si "cochée" */
+[type="radio"]:checked + label:after {
+	opacity: 1;
+	/* coche opaque */
+	transform: scale(1);
+	/* mise à l'échelle 1:1 */
+}
+/* aspect désactivée */
+[type="radio"]:disabled:not(:checked) + label:before,
+[type="radio"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+/* styles de la coche (si cochée/désactivée) */
+[type="radio"]:disabled:checked + label:after {
+	color: #999;
+}
+/* on style aussi le label quand désactivé */
+[type="radio"]:disabled + label {
+	color: #aaa;
+}
+/* aspect au focus de l'élément */
+[type="radio"]:checked:focus + label:before,
+[type="radio"]:not(:checked):focus + label:before {
+	border: 1px dotted blue;
+}
+
+
+.show-question {
+	border-bottom: 1px dashed #DDD;
+	margin-bottom: 7px;
+}
+
+.show-question-content {
+	font-size:110%;
+}
+
+.watu-admin label {
+	min-width: 150px;
+	display:block;
+	float:left;
+}
+
+.watu-padded {
+	padding: 10px;
+}
+
+.watu-twitter-share-button {
+	margin: 0px !important;
+}
+
+/* The following is override for themes that set radios and checkboxes on their own line */
+.quiz-form label,
+.quiz-form input[type="checkbox"],
+.quiz-form input[type="radio"] {
+	display: inline !important;
+}
+form.quiz-form span {
+	display: inline;
+}
+form.quiz-form input {
+	display: inline;
+}
+
+input[type="button"]:hover {
+	background: #e20030;
+}
+input[type="button"]:active {
+	background: #e20030;
+}
+
+input[type="button"]:focus {
+	background: #e20030;
+}
+
+input[type="button"]{
+	background: #fff;
+	border: 1px solid grey;
+}
