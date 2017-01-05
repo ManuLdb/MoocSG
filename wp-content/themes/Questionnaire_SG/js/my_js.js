@@ -442,6 +442,7 @@ $('#a1').click(
 $('#n1').click(
           function() {
             $("#question1").hide();
+            $(".answers").hide();
             $("#question2 .question .texte_container p:gt(0)").hide();
             $("#a2").hide();
             $("#ai2").hide();
@@ -463,6 +464,7 @@ $('#n1').click(
     $('#n2').click(
           function() {
             $("#question2").hide();
+            $(".answers").hide();
             $("#question3 .question .texte_container p:gt(0)").hide();
             $("#a3").hide();
             $("#ai3").hide();

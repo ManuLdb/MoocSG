@@ -21,6 +21,7 @@
 		</div>
 	</div>
 </div>
+</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="<?php bloginfo('url'); ?>/wp-content/themes/Questionnaire_SG/js/my_js.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
