@@ -175,6 +175,7 @@ $("#bingo_03").click(function(){
 var score = 0;
 var txt_score = " point.";
 document.getElementById("score").innerHTML = score + txt_score;
+document.getElementById("score_02").value = score;
 function updatescore() 
 {
     if((score >= -1) && (score <= 1))
@@ -186,6 +187,7 @@ function updatescore()
       txt_score = " points."
     }
     document.getElementById("score").innerHTML = score + txt_score;
+    document.getElementById("score_02").value = score;
 }
 
 //Confirmation réponses Cash

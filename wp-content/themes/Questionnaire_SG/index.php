@@ -55,6 +55,7 @@
 	</div> <!-- /Row vidéo -->
 
 	<form action="score.php" method="post">
+	<input type="number" id="score_02" value="0" name="score_hide" style="display:none;" />
 	<div class="container" id="question1">
 	    <div class="question col-md-12">
 	      <div class="texte_container col-md-5">
