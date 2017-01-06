@@ -4,7 +4,7 @@ $(document).ready(function()
 {
 
   //Questionnaire
-  $("#question1 .question .texte_container p:gt(0)").hide();
+  $("#question1 .question .texte_container p").hide();
   $("#indice_01").hide();
   $("#question_simple_01").hide();
   $("#cash_container_01").hide();
@@ -108,17 +108,15 @@ var error_on_flash = 0;
 //Choix Flash
 $("#flash_01").click(function(){
   $("#choix_joker_01").hide();
-  $("#question1 .question .texte_container p:gt(4)").show(200);
-  $("#question1 .question .texte_container p:lt(4)").hide();
-  $("#question1 .question .texte_container p:first").show(200);
+  $("#question1 .question .texte_container p:gt(3)").show(200);
+  $("#question1 .question .texte_container p:lt(3)").hide();
   $("#ai1").show(200);
   $("#indice_01").show(200);
 });
 $("#flash_02").click(function(){
   $("#choix_joker_02").hide();
-  $("#question2 .question .texte_container p:gt(4)").show(200);
-  $("#question2 .question .texte_container p:lt(4)").hide();
-  $("#question2 .question .texte_container p:first").show(200);
+  $("#question2 .question .texte_container p:gt(3)").show(200);
+  $("#question2 .question .texte_container p:lt(3)").hide();
   $("#ai2").show(200);
   if(error_on_flash == 0)
   {
@@ -131,9 +129,8 @@ $("#flash_02").click(function(){
 });
 $("#flash_03").click(function(){
   $("#choix_joker_03").hide();
-  $("#question3 .question .texte_container p:gt(4)").show(200);
-  $("#question3 .question .texte_container p:lt(4)").hide();
-  $("#question3 .question .texte_container p:first").show(200);
+  $("#question3 .question .texte_container p:gt(3)").show(200);
+  $("#question3 .question .texte_container p:lt(3)").hide();
   $("#ai3").show(200);
   if(error_on_flash == 0)
   {
@@ -148,26 +145,26 @@ $("#flash_03").click(function(){
 //Choix Bingo
 $("#bingo_01").click(function(){
   $("#choix_joker_01").hide();
-  $("#question1 .question .texte_container p:first").hide();
+  $("#question1 .question .texte_container p:first").show(200);
   $("#question_simple_01").show(200);
   $("#question1 .question .texte_container p:gt(0)").show(200);
-  $("#question1 .question .texte_container p:gt(4)").hide();
+  $("#question1 .question .texte_container p:gt(3)").hide();
   $("#a1").show(200);
 });
 $("#bingo_02").click(function(){
   $("#choix_joker_02").hide();
-  $("#question2 .question .texte_container p:first").hide();
+  $("#question2 .question .texte_container p:first").show(200);
   $("#question_simple_02").show(200);
   $("#question2 .question .texte_container p:gt(0)").show(200);
-  $("#question2 .question .texte_container p:gt(4)").hide();
+  $("#question2 .question .texte_container p:gt(3)").hide();
   $("#a2").show(200);
 });
 $("#bingo_03").click(function(){
   $("#choix_joker_03").hide();
-  $("#question3 .question .texte_container p:first").hide();
+  $("#question3 .question .texte_container p:first").show(200);
   $("#question_simple_03").show(200);
   $("#question3 .question .texte_container p:gt(0)").show(200);
-  $("#question3 .question .texte_container p:gt(4)").hide();
+  $("#question3 .question .texte_container p:gt(3)").hide();
   $("#a3").show(200);
 });
 
@@ -446,6 +443,7 @@ $('#n1').click(
             $("#question1").hide();
             $(".answers").hide();
             $("#question2 .question .texte_container p:gt(0)").hide();
+            $("#question2 .question .texte_container p:first").hide();
             $("#a2").hide();
             $("#ai2").hide();
             $("#question2").show(200);
@@ -468,6 +466,7 @@ $('#n1').click(
             $("#question2").hide();
             $(".answers").hide();
             $("#question3 .question .texte_container p:gt(0)").hide();
+            $("#question3 .question .texte_container p:first").hide();
             $("#a3").hide();
             $("#ai3").hide();
             $("#question3").show(200);

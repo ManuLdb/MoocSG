@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $host = "localhost";
 $dbName = "moocsg";
 $user = "root";
@@ -17,16 +19,16 @@ catch(Expection $e)
 
 <?php
 
-	$score = htmlspecialchars($_POST["score_total"]);
-	$request = $db->prepare("SELECT id FROM score WHERE score_obtenu LIKE :score_obtenu");
+	$score = htmlspecialchars($_POST["score_hide"]);
+/*	$request = $db->prepare("SELECT id FROM score WHERE score_obtenu LIKE :score_obtenu");
                 $request->execute
                 (
                     array
                     (
                         "score_obtenu" => $score
                     )
-                );
-    $request = $db->prepare("INSERT INTO score (score_obtenu) VALUES (:score_obtenu)");
+                );*/
+    $request = $db->prepare("INSERT INTO score (score_obtenu, user_id) VALUES (:score_obtenu, 0)");
                     $request->execute
                     (
                         array
