@@ -54,6 +54,8 @@
 	<div class="col-md-12 col-xs-12 playlist">
 	 		<span>Votre score est de <strong id="score" name="score_total"></strong></span>
 	 		<a class="btn btn-default" data-target="#regles" data-toggle="modal">Règles</a>
+	 		<a class="btn btn-default" href="http://localhost/MoocSG%204/index.php/debut/">Début</a>
+
 	</div>
 	<div class="container" id="question1">
 	    <div class="question col-md-12">

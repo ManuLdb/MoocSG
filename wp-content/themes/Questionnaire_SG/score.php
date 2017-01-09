@@ -3,9 +3,9 @@
 session_start();
 
 $host = "localhost";
-$dbName = "moocsg";
+$dbName = "sg_new";
 $user = "root";
-$password = "";
+$password = "root";
 
 try
 {

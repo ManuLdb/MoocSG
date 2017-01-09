@@ -38,11 +38,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Training</a></li>
-        <li><a href="#">Library</a></li>
-        <li><a href="#">Assessments</a></li>
-        <li><a href="#">News</a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Bibliothèque</a></li>
+        <li><a href="#">Évaluations</a></li>
+        <li><a href="#">À propos</a></li>
         <li><a href="#">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
