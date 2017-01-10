@@ -49,7 +49,50 @@
 		</div>
 	</div> --> <!-- /Row vidéo -->
 
-	<form action="score.php" method="post">
+	<div class="container" id="debut">
+	    <div class="question col-md-12 pagedebut">
+	    	<div class="question col-md-12">
+	    	<div class="texte_container col-md-12 col-xs-12 ">
+	    	<h2>THÈME 1</h2>
+	        	<h3>Les attentes des clients du pilotage financier</h3>
+	        	<div class="col-md-4 col-xs-6 col-xs-offset-3">
+	        		<img style="position:relative;z-index:2;" class="img-responsive" src="<?php bloginfo('url'); ?>/wp-content/themes/Questionnaire_SG/Elements/fauteuil.png" alt="Fauteuil" />
+	        	</div>
+	        	<div class="col-md-4 col-xs-12 text-center" style="margin-top:100px;"><a class="btn btn-danger btn-lg boutonrouge boutonjouer" id="play">JOUER</a></div>
+				
+	    	</div>
+	    	<div class="fauteuil_banderole col-md-12 col-xs-12" style="background-color: #AD0011; height: 120px; position : relative; top:-80px; z-index:1;">
+	    	<div class="col-md-12 text-right col-xs-12"><a class="btn btn-danger boutonregles" style="margin-top : 50px !important; margin-right : 50px !important;" data-target="#regles" data-toggle="modal">Règles du jeu</a></div>
+	    	</div>
+	    	</div>
+		</div>
+	</div>
+
+	<div class="container" id="modules">
+	    <div class="question col-md-12 pagedebut">
+	    	<div class="question col-md-12">
+	    	<div class="texte_container col-md-12 col-xs-12 ">
+	    	<h2>THÈME 1</h2>
+	        	<h3>Les attentes des clients du pilotage financier</h3><br><br><br><br><br>
+	        	<div class="col-md-5 col-md-offset-1 col-xs-12 text-center">
+	        		<img src="<?php bloginfo('url'); ?>/wp-content/themes/Questionnaire_SG/img/fauteuil.png">
+	        	</div>
+
+	        	<div class="col-md-5 col-xs-12">
+					<a><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges modules_btn">Le fonctionnement d'une Banque</button></a><br>
+					<a><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges modules_btn">L'Organisation du Groupe </button></a><br>
+					<a><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges modules_btn">La Stratégie du Groupe SG</button></a><br>
+					<a><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges modules_btn">La Filière Finance SG</button></a><br>
+					<a><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges modules_btn">Le Rôle du Pilotage Financier</button></a><br>
+	        	</div>
+	        	<div class="col-md-1"></div>
+
+	    	</div>
+	    	</div>
+		</div>
+	</div>
+
+	<form action="score.php" method="post" id="questionnaire">
 	<input type="number" id="score_02" value="0" name="score_hide" style="display:none;" />
 	<div class="col-md-12 col-xs-12 playlist">
 	 		<span>Votre score est de <strong id="score" name="score_total"></strong></span>

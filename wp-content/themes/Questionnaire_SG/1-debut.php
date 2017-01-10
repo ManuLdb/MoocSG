@@ -65,7 +65,7 @@
 	        	<div class="col-md-4 col-xs-12 text-center" style="margin-top:100px;"><a href="http://localhost/moocsg/module/" class="btn btn-danger btn-lg boutonrouge boutonjouer">JOUER</a></div>
 				
 	    	</div>
-	    	<div class="col-md-12 col-xs-12" style="background-color: #AD0011; height: 120px; position : relative; top:-80px; z-index:1;">
+	    	<div class="fauteuil_banderole col-md-12 col-xs-12" style="background-color: #AD0011; height: 120px; position : relative; top:-80px; z-index:1;">
 	    	<div class="col-md-12 text-right col-xs-12"><a class="btn btn-danger boutonregles" style="margin-top : 50px !important; margin-right : 50px !important;" data-target="#regles" data-toggle="modal">Règles du jeu</a></div>
 	    	</div>
 	    	</div>

@@ -59,12 +59,11 @@
 	    	<div class="texte_container col-md-12 col-xs-12 ">
 	    	<h2>THÈME 1</h2>
 	        	<h3>Les attentes des clients du pilotage financier</h3><br><br><br><br><br>
-				<div class="col-md-1"></div>
-	        	<div class="col-md-5">
+	        	<div class="col-md-5 col-md-offset-1 col-xs-12 text-center">
 	        		<img src="<?php bloginfo('url'); ?>/wp-content/themes/Questionnaire_SG/img/fauteuil.png">
 	        	</div>
 
-	        	<div class="col-md-5">
+	        	<div class="col-md-5 col-xs-12">
 					<a href="http://localhost/moocsg/premquestion/"><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges">Le fonctionnement d'une Banque</button></a><br>
 					<a href="http://localhost/moocsg/premquestion/"><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges">L'Organisation du Groupe </button></a><br>
 					<a href="http://localhost/moocsg/premquestion/"><button type="button" class="btn btn-primary btn-lg btn-block boutonslarges">La Stratégie du Groupe SG</button></a><br>

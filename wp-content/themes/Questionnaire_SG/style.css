@@ -299,4 +299,12 @@
 		text-align: right;
 		margin-right: 10px;
 	}
+	.fauteuil_banderole
+	{
+		top : -180px !important;
+	}
+}
+a:hover
+{
+	text-decoration: none !important;
 }

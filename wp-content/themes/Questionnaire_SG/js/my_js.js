@@ -4,6 +4,8 @@ $(document).ready(function()
 {
 
   //Questionnaire
+  $("#questionnaire").hide();
+  $("#modules").hide();
   $("#question1 .question .texte_container p").hide();
   $("#indice_01").hide();
   $("#question_simple_01").hide();
@@ -18,6 +20,18 @@ $(document).ready(function()
 
 
    
+});
+
+//Click Jouer
+$("#play").click(function(){
+  $("#modules").show(200);
+  $("#debut").hide();
+});
+
+//Click modules
+$(".modules_btn").click(function(){
+  $("#questionnaire").show(200);
+  $("#modules").hide();
 });
 
 //Compteur pour Cash
