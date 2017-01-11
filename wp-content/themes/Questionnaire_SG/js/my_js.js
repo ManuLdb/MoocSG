@@ -6,6 +6,7 @@ $(document).ready(function()
   //Questionnaire
   $("#questionnaire").hide();
   $("#modules").hide();
+  $(".question_img").hide();
   $("#question1 .question .texte_container p").hide();
   $("#indice_01").hide();
   $("#question_simple_01").hide();
@@ -20,6 +21,12 @@ $(document).ready(function()
 
 
    
+});
+
+//Click Accueil
+$("#home").click(function(){
+  $("#debut").show(200);
+  $("#questionnaire").hide();
 });
 
 //Click Jouer
@@ -44,11 +51,11 @@ function decompte01()
     {
         if(cpt>1)
         {
-            var sec = " secondes.";
+            var sec = " secondes";
         } else {
-            var sec = " seconde.";
+            var sec = " seconde";
         }
-        document.getElementById("Crono_01").innerHTML = "Vous n'avez plus que " + cpt + sec ;
+        document.getElementById("Crono_01").innerHTML = cpt + sec ;
         cpt-- ;
         x = setTimeout("decompte01()",1000) ;
         return cpt;
@@ -64,11 +71,11 @@ function decompte02()
     {
         if(cpt2>1)
         {
-            var sec = " secondes.";
+            var sec = " secondes";
         } else {
-            var sec = " seconde.";
+            var sec = " seconde";
         }
-        document.getElementById("Crono_02").innerHTML = "Vous n'avez plus que " + cpt2 + sec ;
+        document.getElementById("Crono_02").innerHTML = cpt2 + sec ;
         cpt2-- ;
         y = setTimeout("decompte02()",1000) ;
         return cpt2;
@@ -84,11 +91,11 @@ function decompte03()
     {
         if(cpt3>1)
         {
-            var sec = " secondes.";
+            var sec = " secondes";
         } else {
-            var sec = " seconde.";
+            var sec = " seconde";
         }
-        document.getElementById("Crono_03").innerHTML = "Vous n'avez plus que " + cpt3 + sec ;
+        document.getElementById("Crono_03").innerHTML = cpt3 + sec ;
         cpt3-- ;
         z = setTimeout("decompte03()",1000) ;
         return cpt3;
@@ -124,6 +131,7 @@ $("#flash_01").click(function(){
   $("#choix_joker_01").hide();
   $("#question1 .question .texte_container p:gt(3)").show(200);
   $("#question1 .question .texte_container p:lt(3)").hide();
+  $(".rep_bingo").hide();
   $("#ai1").show(200);
   $("#indice_01").show(200);
 });
@@ -131,6 +139,7 @@ $("#flash_02").click(function(){
   $("#choix_joker_02").hide();
   $("#question2 .question .texte_container p:gt(3)").show(200);
   $("#question2 .question .texte_container p:lt(3)").hide();
+  $(".rep_bingo").hide();
   $("#ai2").show(200);
   if(error_on_flash == 0)
   {
@@ -145,6 +154,7 @@ $("#flash_03").click(function(){
   $("#choix_joker_03").hide();
   $("#question3 .question .texte_container p:gt(3)").show(200);
   $("#question3 .question .texte_container p:lt(3)").hide();
+  $(".rep_bingo").hide();
   $("#ai3").show(200);
   if(error_on_flash == 0)
   {
@@ -290,7 +300,7 @@ $("#ac3").click(function(){
 });
 
 //Confirmation réponses Flash
-$('#ai1').click(
+$('#ai1 a').click(
           function() { 
             $('.answers').show(200);
             $('#reponse1').hide();
@@ -316,7 +326,7 @@ $('#ai1').click(
             $('#next1').show(200);
             $('#ai1').hide();
           });
-$('#ai2').click(
+$('#ai2 a').click(
           function() { 
             $('.answers').show(200);
             $('#reponse2').hide();
@@ -342,7 +352,7 @@ $('#ai2').click(
             $('#next2').show(200);
             $('#ai2').hide();
           });
-$('#ai3').click(
+$('#ai3 a').click(
           function() { 
             $('.answers').show(200);
             $('#reponse3').hide();
